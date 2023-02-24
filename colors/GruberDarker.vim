@@ -36,8 +36,8 @@
   let s:gruberWhite=['#ffffff', '15']
   let s:gruberBlack=['#303030', '0']
   let s:gruberBG=['#333333', '233']
-  let s:gruberBG1=['#444444', '235']
-  let s:gruberBG2=['#434343', '238']
+  let s:gruberBG1=['#4f4f4d', '235']
+  let s:gruberBG2=['#545454', '238']
   let s:gruberLightRed=['#c73c3f', '203']
   let s:gruberRed=['#f04141', '160']
   let s:gruberNiagara=['#96a6c8', '147']
@@ -137,7 +137,7 @@ call <sid>hi('Special',       s:gruberMain,       '',            '',          ''
 call <sid>hi('SpecialChar',   s:gruberMain,       '',            '',          '')
 call <sid>hi('Statement',     s:gruberMain,       '',            '',          '')
 call <sid>hi('StorageClass',  s:gruberMain,       '',            '',          '')
-call <sid>hi('String',        s:gruberRed,      '',            '',          '')
+call <sid>hi('String',        s:gruberGreen,      '',            '',          '')
 call <sid>hi('Structure',     s:gruberMain,       '',            '',          '')
 call <sid>hi('Todo',          s:gruberBG,         s:gruberMain,  '',          '')
 call <sid>hi('Type',          s:gruberQuartz,     '',            '',          '')
