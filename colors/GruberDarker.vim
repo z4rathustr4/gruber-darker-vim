@@ -12,7 +12,7 @@
   if exists("syntax_on")
     syntax reset
   endif
-  let g:colors_name="gruber-dark-z4rathustr4"
+  let g:colors_name="GruberDarker"
 " }}}
 " {{{ Italics
   let g:gruber_terminal_italic = get(g:, 'gruber_terminal_italic', 0)
@@ -35,11 +35,11 @@
   let s:gruberFG3=['#65737e', '243']
   let s:gruberWhite=['#ffffff', '15']
   let s:gruberBlack=['#303030', '0']
-  let s:gruberBG=['#232423', '233']
-  let s:gruberBG1=['#373737', '235']
+  let s:gruberBG=['#333333', '233']
+  let s:gruberBG1=['#444444', '235']
   let s:gruberBG2=['#434343', '238']
   let s:gruberLightRed=['#c73c3f', '203']
-  let s:gruberRed=['#f43841', '160']
+  let s:gruberRed=['#f04141', '160']
   let s:gruberNiagara=['#96a6c8', '147']
   let s:gruberQuartz=['#95a99f', '108']
   let s:gruberGreen=['#07ba64', '70']
@@ -117,7 +117,7 @@ call <sid>hi('helpCommand',   s:gruberMain,       '',            '',        '')
 
 " Standard syntax highlighting
 call <sid>hi('Boolean',       s:gruberQuartz,     '',            '',          '')
-call <sid>hi('Character',     s:gruberGreen,      '',            '',          '')
+call <sid>hi('Character',     s:gruberRed,      '',            '',          '')
 call <sid>hi('Comment',       s:gruberBrown,      '',            s:italic,    '')
 call <sid>hi('Conditional',   s:gruberMain,       '',            '',          '')
 call <sid>hi('Constant',      s:gruberQuartz,     '',            '',          '')
@@ -137,7 +137,7 @@ call <sid>hi('Special',       s:gruberMain,       '',            '',          ''
 call <sid>hi('SpecialChar',   s:gruberMain,       '',            '',          '')
 call <sid>hi('Statement',     s:gruberMain,       '',            '',          '')
 call <sid>hi('StorageClass',  s:gruberMain,       '',            '',          '')
-call <sid>hi('String',        s:gruberGreen,      '',            '',          '')
+call <sid>hi('String',        s:gruberRed,      '',            '',          '')
 call <sid>hi('Structure',     s:gruberMain,       '',            '',          '')
 call <sid>hi('Todo',          s:gruberBG,         s:gruberMain,  '',          '')
 call <sid>hi('Type',          s:gruberQuartz,     '',            '',          '')
@@ -225,4 +225,11 @@ let g:terminal_color_15=s:gruberFG[0]
 
 let g:terminal_color_background=s:gruberBG1[0]
 let g:terminal_color_foreground=s:gruberWhite[0]
+
+highlight Cursor guifg=DarkYellow guibg=DarkYellow
+highlight iCursor guifg=DarkYellow guibg=DarkYellow
+set guicursor=n-v-c:block-Cursor
+set guicursor+=i:ver100-iCursor
+set guicursor+=n-v-c:blinkon0
+set guicursor+=i:blinkwait10
 
