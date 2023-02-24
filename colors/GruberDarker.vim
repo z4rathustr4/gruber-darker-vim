@@ -1,8 +1,8 @@
 " GruberDarker Theme for Vim
 "
-" Adapted from an Emacs theme: 
+" Adapted from an Emacs theme:
 " https://github.com/rexim/gruber-darker-theme
-" 
+"
 " Colorscheme template: https://github.com/mhartington/oceanic-next/blob/master/colors/OceanicNext.vim
 " --------------------------------------------
 
@@ -12,7 +12,7 @@
   if exists("syntax_on")
     syntax reset
   endif
-  let g:colors_name="GruberDarker"
+  let g:colors_name="gruber-dark-z4rathustr4"
 " }}}
 " {{{ Italics
   let g:gruber_terminal_italic = get(g:, 'gruber_terminal_italic', 0)
@@ -34,20 +34,20 @@
   let s:gruberFG2=['#f5f5ff', '240']
   let s:gruberFG3=['#65737e', '243']
   let s:gruberWhite=['#ffffff', '15']
-  let s:gruberBlack=['#000000', '0']
-  let s:gruberBG=['#181818', '233']
-  let s:gruberBG1=['#282828', '235']
-  let s:gruberBG2=['#453d41', '238']
+  let s:gruberBlack=['#303030', '0']
+  let s:gruberBG=['#232423', '233']
+  let s:gruberBG1=['#373737', '235']
+  let s:gruberBG2=['#434343', '238']
   let s:gruberLightRed=['#c73c3f', '203']
   let s:gruberRed=['#f43841', '160']
   let s:gruberNiagara=['#96a6c8', '147']
   let s:gruberQuartz=['#95a99f', '108']
-  let s:gruberGreen=['#73c936', '70']
+  let s:gruberGreen=['#07ba64', '70']
   let s:gruberMain=['#ffdd33', '220']
   let s:gruberBrown=['#cc8c3c', '172']
   let s:gruberPurple=['#9e95c7', '98']
   let s:gruberLightBlue=['#0087d7', '32']
-  let s:gruberBlue=['#0000d7', '20']
+  let s:gruberBlue=['#0457cc', '20']
   let s:gruberGold=['#d7af00', '178']
   let s:none=['NONE', 'NONE']
 
